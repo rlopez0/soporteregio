@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on SoporteRegio</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on SoporteRegio</description>
+    <image>
+      <title>SoporteRegio</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 04 Mar 2025 17:58:52 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World 3.0</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Tue, 04 Mar 2025 17:58:52 -0600</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Hello World&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/HelloWorld.png#center&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hola 👋🏼 de nuevo, ahora con una nueva cara por delante y por &lt;em&gt;detrás&lt;/em&gt; ya que estoy probando el generador de contenido estático 
+&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Hugo
+&lt;/a&gt; y he dejado atrás el pesado, pero robusto WordPress, ya que para lo que requiero este manejador de contenido (CMS) ya me quedó muy grande, entre las cosas interesantes que tiene el contenido estático es, el no lidiar con bases de datos, ya que prácticamente son páginas html, con css y javascript. No soy programador aunque si tecnólogo y le eh estado aprendiendo un poco a este nuevo “sistema”.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

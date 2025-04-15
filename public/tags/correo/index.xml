@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Correo on SoporteRegio</title>
+    <link>http://localhost:1313/tags/correo/</link>
+    <description>Recent content in Correo on SoporteRegio</description>
+    <image>
+      <title>SoporteRegio</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 25 Mar 2024 13:57:13 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/correo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Esclavitud a Microsoft Una Boda Por Conveniencia</title>
+      <link>http://localhost:1313/posts/esclavitud-a-microsoft-una-boda-por-conveniencia/</link>
+      <pubDate>Mon, 25 Mar 2024 13:57:13 -0600</pubDate>
+      <guid>http://localhost:1313/posts/esclavitud-a-microsoft-una-boda-por-conveniencia/</guid>
+      <description>&lt;p&gt;En la gran comedia romántica que es el mundo de la tecnología, las empresas suelen casarse por conveniencia y no precisamente por amor. Aquí entra en escena nuestro personaje principal, el omnipresente Microsoft y su elenco estelar: Microsoft 365. Esta relación, más atada que Romeo y Julieta, ha provocado que muchas empresas y usuarios se vean obligados a decir &amp;ldquo;hasta que la falta de compatibilidad nos separe&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;el-monopolio-del-altar-tecnológico&#34;&gt;El Monopolio del Altar Tecnológico&lt;/h2&gt;
+&lt;p&gt;No es ningún secreto que Microsoft, con su suite Microsoft 365, se ha convertido en el estándar de facto para herramientas de colaboración y ofimática. Su omnipresencia es tal, que sugerir en el ambiente laboral el uso de sistemas operativos como Linux o MacOS es casi visto como proponer una boda en Las Vegas: emocionante, pero con consecuencias impredecibles.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

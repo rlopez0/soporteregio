@@ -1,0 +1,4 @@
+{{ $link := .Destination | safeURL }}
+<a href="{{ $link }}"{{ if not (strings.HasPrefix $link "#") }} target="_blank" rel="noopener"{{ end }}>
+  {{ .Text | safeHTML }}
+</a>

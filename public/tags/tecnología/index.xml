@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tecnología on SoporteRegio</title>
+    <link>http://localhost:1313/tags/tecnolog%C3%ADa/</link>
+    <description>Recent content in Tecnología on SoporteRegio</description>
+    <image>
+      <title>SoporteRegio</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 04 Mar 2025 17:58:52 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tecnolog%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World 3.0</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Tue, 04 Mar 2025 17:58:52 -0600</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Hello World&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/HelloWorld.png#center&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hola 👋🏼 de nuevo, ahora con una nueva cara por delante y por &lt;em&gt;detrás&lt;/em&gt; ya que estoy probando el generador de contenido estático 
+&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Hugo
+&lt;/a&gt; y he dejado atrás el pesado, pero robusto WordPress, ya que para lo que requiero este manejador de contenido (CMS) ya me quedó muy grande, entre las cosas interesantes que tiene el contenido estático es, el no lidiar con bases de datos, ya que prácticamente son páginas html, con css y javascript. No soy programador aunque si tecnólogo y le eh estado aprendiendo un poco a este nuevo “sistema”.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contenedores ¿Windows?</title>
+      <link>http://localhost:1313/posts/contenedores-windows/</link>
+      <pubDate>Wed, 03 Apr 2024 19:23:13 -0600</pubDate>
+      <guid>http://localhost:1313/posts/contenedores-windows/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Desde simplificar las rutinas de trabajo hasta potenciar proyectos personales, los contenedores de Docker están redefiniendo nuestra forma de interactuar con la tecnología.
+¿Pero&amp;hellip; Windows en contenedor?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;que-son-contenedores&#34;&gt;¿Que son contenedores?&lt;/h2&gt;
+&lt;figure class=&#34;align-center &#34;&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/contenedores2.webp#center&#34;
+         alt=&#34;Infografía Windows en Contenedores&#34; width=&#34;600&#34; height=&#34;600&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Infografía Windows en Contenedores&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Imagina un mundo donde instalar, ejecutar y cambiar entre diferentes aplicaciones y entornos de trabajo es tan fácil como cambiar de zapatos. ¿Necesitas zapatillas para correr? ¡Listo! ¿Botas para la lluvia? ¡Ahí están! Así es como 
+&lt;a href=&#34;https://www.docker.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Docker
+&lt;/a&gt;, especialmente en Windows, está revolucionando nuestras tareas cotidianas de productividad: haciendo que el cambio entre diferentes &amp;ldquo;calzados&amp;rdquo; tecnológicos sea un juego de niños.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Atajos; Sencillo Pero Util</title>
+      <link>http://localhost:1313/posts/atajos-sencillo-pero-util/</link>
+      <pubDate>Wed, 27 Mar 2024 07:00:13 -0600</pubDate>
+      <guid>http://localhost:1313/posts/atajos-sencillo-pero-util/</guid>
+      <description>&lt;p&gt;Parecería tonto pensar que algo tan sencillo ya todo el mundo lo sabría hacer o lo tendría a la mano para ejecutar pero resulta ser que no o al menos no encontré nada relacionado en la Web, en Youtube o en algún otro sitio de red social.&lt;/p&gt;
+&lt;p&gt;Y de lo que estoy hablando exactamente es el de sacar porcentajes esto llevado a cabo de la mano de la excelente herramienta de iOS &amp;ldquo;atajos&amp;rdquo; o &amp;ldquo;shortcuts&amp;rdquo; para nuestros amigos que tienen sus dispositivos en inglés pero son de habla hispana. Para los que no conocen buen exactamente que son los atajos de iOS aquí les va la explicación directito de Apple mismo:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
