@@ -84,12 +84,6 @@ git push origin production
 .\scripts\deploy.ps1
 ```
 ---
-🔐 Acceso al servidor
-- VPS: 45.56.73.27
-- Usuario: ricardo (ajustar si cambia)
-- Llave privada: C:\Users\goofy\.ssh\artemisa.ppk
-
----
 Ruta de despliegue: /var/www/soporteregio.com
 
 📌 Requisitos
