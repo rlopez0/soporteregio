@@ -9,10 +9,32 @@
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.146.7</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 04 Mar 2025 17:58:52 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 20:31:34 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post de prueba futuro</title>
+      <link>http://localhost:1313/posts/post-futuro/</link>
+      <pubDate>Sun, 27 Apr 2025 20:31:34 -0600</pubDate>
+      <guid>http://localhost:1313/posts/post-futuro/</guid>
+      <description>&lt;p&gt;Este post tiene una fecha de publicación programada para el futuro (&lt;strong&gt;2025-04-27 20:31&lt;/strong&gt;).
+No aparecerá en la lista pública hasta que se alcance esa fecha.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post de prueba inmediato</title>
+      <link>http://localhost:1313/posts/post-inmediato/</link>
+      <pubDate>Thu, 24 Apr 2025 20:31:34 -0600</pubDate>
+      <guid>http://localhost:1313/posts/post-inmediato/</guid>
+      <description>&lt;p&gt;Este post debería verse inmediatamente en tu blog. Fue generado con la fecha y hora actuales.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Config Windows Docker</title>
+      <link>http://localhost:1313/posts/config-windows-docker/</link>
+      <pubDate>Thu, 24 Apr 2025 10:20:21 -0600</pubDate>
+      <guid>http://localhost:1313/posts/config-windows-docker/</guid>
+      <description>Lo prometido es deuda, configurando y corriendo Windows en Docker</description>
+    </item>
     <item>
       <title>Hello World 3.0</title>
       <link>http://localhost:1313/posts/hello-world/</link>
