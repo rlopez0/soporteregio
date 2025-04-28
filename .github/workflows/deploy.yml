@@ -25,12 +25,12 @@ jobs:
       
       - name: 🚀 Rsync Deploy to VPS
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
+          ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
             sudo chown -R $USER:www-data /var/www/html/soporteregio.com/public_html/ &&
             sudo chmod -R 775 /var/www/html/soporteregio.com/public_html/"
     
-          rsync -avz --delete public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
+          rsync -avz -e "ssh -p 2222 -o StrictHostKeyChecking=no" --delete public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
 
-          ssh -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
+          ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
             sudo chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/ &&
             sudo chmod -R 755 /var/www/html/soporteregio.com/public_html/"
