@@ -1,0 +1,36 @@
+name: 🚀 Deploy Soporteregio Blog
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: 🛠️ Setup SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+
+      - name: 🔨 Build Hugo Site
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+      
+      - name: 🚀 Rsync Deploy to VPS
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
+            sudo chown -R $USER:www-data /var/www/html/soporteregio.com/public_html/ &&
+            sudo chmod -R 775 /var/www/html/soporteregio.com/public_html/"
+    
+          rsync -avz --delete public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
+
+          ssh -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
+            sudo chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/ &&
+            sudo chmod -R 755 /var/www/html/soporteregio.com/public_html/"
