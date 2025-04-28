@@ -2,85 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://soporteregio.com/posts/config-windows-docker/</loc>
+    <loc>http://localhost:1313/posts/post-de-prueba/</loc>
+    <lastmod>2025-04-27T23:47:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-04-27T23:47:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-27T23:47:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/config-windows-docker/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/contenedores/</loc>
+    <loc>http://localhost:1313/tags/contenedores/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/devops/</loc>
+    <loc>http://localhost:1313/tags/devops/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/fedora/</loc>
+    <loc>http://localhost:1313/tags/fedora/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/posts/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/</loc>
+    <loc>http://localhost:1313/tags/windows/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/</loc>
-    <lastmod>2025-04-24T10:20:21-06:00</lastmod>
-  </url><url>
-    <loc>https://soporteregio.com/tags/windows/</loc>
-    <lastmod>2025-04-24T10:20:21-06:00</lastmod>
-  </url><url>
-    <loc>https://soporteregio.com/tags/blog/</loc>
+    <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2025-03-04T17:58:52-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/posts/hello-world/</loc>
+    <loc>http://localhost:1313/posts/hello-world/</loc>
     <lastmod>2025-03-04T17:58:52-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/tecnolog%C3%ADa/</loc>
+    <loc>http://localhost:1313/tags/tecnolog%C3%ADa/</loc>
     <lastmod>2025-03-04T17:58:52-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/posts/contenedores-windows/</loc>
+    <loc>http://localhost:1313/posts/contenedores-windows/</loc>
     <lastmod>2024-04-03T19:23:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2024-04-03T19:23:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/productividad/</loc>
+    <loc>http://localhost:1313/tags/productividad/</loc>
     <lastmod>2024-04-03T19:23:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/apple/</loc>
+    <loc>http://localhost:1313/tags/apple/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/atajos/</loc>
+    <loc>http://localhost:1313/tags/atajos/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/posts/atajos-sencillo-pero-util/</loc>
+    <loc>http://localhost:1313/posts/atajos-sencillo-pero-util/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/ios/</loc>
+    <loc>http://localhost:1313/tags/ios/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/ipad/</loc>
+    <loc>http://localhost:1313/tags/ipad/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/iphone/</loc>
+    <loc>http://localhost:1313/tags/iphone/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/mac/</loc>
+    <loc>http://localhost:1313/tags/mac/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/shortcuts/</loc>
+    <loc>http://localhost:1313/tags/shortcuts/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/tags/correo/</loc>
+    <loc>http://localhost:1313/tags/correo/</loc>
     <lastmod>2024-03-25T13:57:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/posts/esclavitud-a-microsoft-una-boda-por-conveniencia/</loc>
+    <loc>http://localhost:1313/posts/esclavitud-a-microsoft-una-boda-por-conveniencia/</loc>
     <lastmod>2024-03-25T13:57:13-06:00</lastmod>
   </url><url>
-    <loc>https://soporteregio.com/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>https://soporteregio.com/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url><url>
-    <loc>https://soporteregio.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
