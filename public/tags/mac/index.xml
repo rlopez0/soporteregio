@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mac on SoporteRegio</title>
-    <link>http://localhost:1313/tags/mac/</link>
+    <link>https://soporteregio.com/tags/mac/</link>
     <description>Recent content in Mac on SoporteRegio</description>
     <image>
       <title>SoporteRegio</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://soporteregio.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://soporteregio.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>es</language>
     <lastBuildDate>Wed, 27 Mar 2024 07:00:13 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://soporteregio.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atajos; Sencillo Pero Util</title>
-      <link>http://localhost:1313/posts/atajos-sencillo-pero-util/</link>
+      <link>https://soporteregio.com/posts/atajos-sencillo-pero-util/</link>
       <pubDate>Wed, 27 Mar 2024 07:00:13 -0600</pubDate>
-      <guid>http://localhost:1313/posts/atajos-sencillo-pero-util/</guid>
+      <guid>https://soporteregio.com/posts/atajos-sencillo-pero-util/</guid>
       <description>&lt;p&gt;Parecería tonto pensar que algo tan sencillo ya todo el mundo lo sabría hacer o lo tendría a la mano para ejecutar pero resulta ser que no o al menos no encontré nada relacionado en la Web, en Youtube o en algún otro sitio de red social.&lt;/p&gt;
 &lt;p&gt;Y de lo que estoy hablando exactamente es el de sacar porcentajes esto llevado a cabo de la mano de la excelente herramienta de iOS &amp;ldquo;atajos&amp;rdquo; o &amp;ldquo;shortcuts&amp;rdquo; para nuestros amigos que tienen sus dispositivos en inglés pero son de habla hispana. Para los que no conocen buen exactamente que son los atajos de iOS aquí les va la explicación directito de Apple mismo:&lt;/p&gt;</description>
     </item>
