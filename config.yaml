@@ -61,7 +61,7 @@ params:
 
   label:
     text: "SoporteRegio.com"
-    icon: /sr_logo1.png
+   # icon: /sr_logo1.png
     iconHeight: 35
 
   # profile-mode
