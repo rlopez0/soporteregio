@@ -30,15 +30,15 @@ jobs:
       - name: 🚀 Rsync Deploy to VPS
         run: |
           ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
-            sudo chown -R rlopez:www-data /var/www/html/soporteregio.com/public_html/ &&
-            sudo chmod -R 775 /var/www/html/soporteregio.com/public_html/"
+            echo '' | sudo -S chown -R rlopez:www-data /var/www/html/soporteregio.com/public_html/ &&
+            echo '' | sudo -S chmod -R 775 /var/www/html/soporteregio.com/public_html/"
     
           rsync -avz -e "ssh -p 2222 -o StrictHostKeyChecking=no" --delete public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
     
           ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} "
-            sudo chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/ &&
-            sudo chmod -R 755 /var/www/html/soporteregio.com/public_html/ &&
+            echo '' | sudo -S chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/ &&
+            echo '' | sudo -S chmod -R 755 /var/www/html/soporteregio.com/public_html/ &&
             cd /var/www/html/soporteregio.com/public_html &&
-            sudo ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki &&
-            sudo ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
+            echo '' | sudo -S /usr/bin/ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki &&
+            echo '' | sudo -S /usr/bin/ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
           "
