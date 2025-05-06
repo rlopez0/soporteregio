@@ -1,5 +1,5 @@
 ---
-title: "Linux vs Empresas"
+title: "Linux, te quiero... pero..."
 date: "2025-05-05T22:12:43-06:00"
 # weight: 1
 # aliases: ["/first"]
@@ -36,7 +36,7 @@ cover:
 #    Text: "Suggest Changes" # edit text
 #    appendFilePath: true # to append file path to Edit link
 ---
-# Linux, te quiero… pero no puedo: cómo terminé en macOS sin traicionar mis principios
+# No puedo: cómo terminé en macOS sin traicionar mis principios
 
 Desde hace años, he sido fan de Linux. Me encanta su filosofía, su eficiencia, la forma en que puedo controlar cada aspecto del sistema, y cómo se adapta perfectamente a servidores, labs, contenedores y todo lo que huela a DevOps. Usar `Core Shell`, configurar redes con `nmcli`, automatizar cosas con Bash o montar entornos con Ansible en Linux es simplemente una delicia. Pero hay una verdad que me costó aceptar: en mi día a día, **no he podido usarlo como sistema base**.
 
