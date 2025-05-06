@@ -61,7 +61,7 @@ params:
 
   label:
     text: "SoporteRegio.com"
-    icon: /apple-touch-icon.png
+    icon: /sr_logo1.png
     iconHeight: 35
 
   # profile-mode
@@ -80,9 +80,9 @@ params:
         url: tags
 
   # home-info mode
-#  homeInfoParams:
-#    Title: "Hola Mundo \U0001F44B"
-#    Content: "Bienvenido a mi blog"
+ # homeInfoParams:
+ #   Title: "Hola Mundo \U0001F44B"
+ #   Content: "Bienvenido a mi blog"
 
   socialIcons:
 #   - name: x

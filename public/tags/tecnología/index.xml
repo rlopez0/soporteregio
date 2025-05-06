@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 04 Mar 2025 17:58:52 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 22:12:43 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tecnolog%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux vs Empresas</title>
+      <link>http://localhost:1313/posts/linux-vs-empresas/</link>
+      <pubDate>Mon, 05 May 2025 22:12:43 -0600</pubDate>
+      <guid>http://localhost:1313/posts/linux-vs-empresas/</guid>
+      <description>&lt;h1 id=&#34;linux-te-quiero-pero-no-puedo-cómo-terminé-en-macos-sin-traicionar-mis-principios&#34;&gt;Linux, te quiero… pero no puedo: cómo terminé en macOS sin traicionar mis principios&lt;/h1&gt;
+&lt;p&gt;Desde hace años, he sido fan de Linux. Me encanta su filosofía, su eficiencia, la forma en que puedo controlar cada aspecto del sistema, y cómo se adapta perfectamente a servidores, labs, contenedores y todo lo que huela a DevOps. Usar &lt;code&gt;Core Shell&lt;/code&gt;, configurar redes con &lt;code&gt;nmcli&lt;/code&gt;, automatizar cosas con Bash o montar entornos con Ansible en Linux es simplemente una delicia. Pero hay una verdad que me costó aceptar: en mi día a día, &lt;strong&gt;no he podido usarlo como sistema base&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hello World 3.0</title>
       <link>http://localhost:1313/posts/hello-world/</link>

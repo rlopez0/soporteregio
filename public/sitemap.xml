@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/post-de-prueba/</loc>
-    <lastmod>2025-04-27T23:47:43-06:00</lastmod>
+    <loc>http://localhost:1313/tags/apple/</loc>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/linux-vs-empresas/</loc>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/macos/</loc>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-04-27T23:47:43-06:00</lastmod>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-27T23:47:43-06:00</lastmod>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tecnolog%C3%ADa/</loc>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/windows/</loc>
+    <lastmod>2025-05-05T22:12:43-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/config-windows-docker/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
@@ -26,32 +44,17 @@
     <loc>http://localhost:1313/tags/fedora/</loc>
     <lastmod>2025-04-24T10:20:21-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-04-24T10:20:21-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/windows/</loc>
-    <lastmod>2025-04-24T10:20:21-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2025-03-04T17:58:52-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/hello-world/</loc>
     <lastmod>2025-03-04T17:58:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tecnolog%C3%ADa/</loc>
-    <lastmod>2025-03-04T17:58:52-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/contenedores-windows/</loc>
-    <lastmod>2024-04-03T19:23:13-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2024-04-03T19:23:13-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/productividad/</loc>
     <lastmod>2024-04-03T19:23:13-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/apple/</loc>
-    <lastmod>2024-03-27T07:00:13-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/atajos/</loc>
     <lastmod>2024-03-27T07:00:13-06:00</lastmod>
