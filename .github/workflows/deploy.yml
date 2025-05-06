@@ -36,9 +36,9 @@ jobs:
 
           rsync -avz -e "ssh -p 2222 -o StrictHostKeyChecking=no" --delete public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
 
-          ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
-            sudo chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/
-            sudo chmod -R 755 /var/www/html/soporteregio.com/public_html/
-            sudo ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki
-            sudo ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
-          EOF
+          ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} 'sudo -n bash -c "
+            chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/ &&
+            chmod -R 755 /var/www/html/soporteregio.com/public_html/ &&
+            ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki &&
+            ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
+          "'
