@@ -39,6 +39,6 @@ jobs:
             sudo chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/ &&
             sudo chmod -R 755 /var/www/html/soporteregio.com/public_html/ &&
             cd /var/www/html/soporteregio.com/public_html &&
-            ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki &&
-            ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
+            sudo ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki &&
+            sudo ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
           "
