@@ -15,7 +15,6 @@ description: "Lo prometido es deuda, configurando y corriendo Windows en Docker"
 canonicalURL: "https://soporteregio.com/posts/config-windows-docker/"
 disableHLJS: true # to disable highlightjs
 disableShare: false
-disableHLJS: false
 hideSummary: false
 searchHidden: false
 ShowReadingTime: true
