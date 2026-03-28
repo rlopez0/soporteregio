@@ -11,38 +11,43 @@ jobs:
 
     steps:
       - name: 📥 Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
-      - name: 🛠️ Setup SSH
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.DEPLOY_SSH_KEY }}
+      - name: 🛠️ Setup SSH agent
+        shell: bash
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          eval "$(ssh-agent -s)"
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" | tr -d '\r' | ssh-add -
+          ssh-keyscan -p 2222 ${{ secrets.DEPLOY_SERVER }} >> ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
-      
+
       - name: Build del sitio
         run: hugo --cleanDestinationDir
-      
+
       - name: 🚀 Rsync Deploy to VPS
+        shell: bash
         run: |
-          ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
-            # Asegurar permisos previos
+          ssh -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
             chown -R rlopez:www-data /var/www/html/soporteregio.com/public_html/
             chmod -R 775 /var/www/html/soporteregio.com/public_html/
           EOF
 
-          rsync -avz -e "ssh -p 2222 -o StrictHostKeyChecking=no" --delete public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
+          rsync -avz --delete \
+            -e "ssh -p 2222" \
+            public/ \
+            ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
 
-          ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
-            # Crear symlinks como rlopez antes del cambio de dueño
+          ssh -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
             ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki
             ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
-
-            # Ahora sí aplicar permisos finales
             sudo chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/
             sudo chmod -R 755 /var/www/html/soporteregio.com/public_html/
           EOF
