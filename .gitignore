@@ -1,35 +1,25 @@
-# Hugo generated files
+# Hugo
 /public/
 /resources/
 
-# OS-specific files
+# OS
 .DS_Store
 Thumbs.db
-Icon?
-Desktop.ini
-
-# Backup files
-*.bak
-*.tmp
-*.swp
-
-# Node modules (por si en el futuro usas npm)
-node_modules/
-
-# Python junk
-__pycache__/
-*.pyc
-*.pyo
 
 # Logs
 *.log
 
-# Binaries
-*.exe
-*.dll
-*.so
-*.dylib
+# Temp / backups
+*.bak
+*.tmp
+*.swp
 
-# Secrets or automation folders
+# Node (si lo usas)
+node_modules/
+
+# Python (si lo usas)
+__pycache__/
+*.pyc
+
+# Secrets
 *.env
-automations/
