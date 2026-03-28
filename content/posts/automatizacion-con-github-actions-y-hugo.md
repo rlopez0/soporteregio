@@ -3,7 +3,7 @@ title: "Automatizacion Con Github Actions Y Hugo"
 date: "2026-03-28T00:50:24-06:00"
 # weight: 1
 # aliases: ["/first"]
-tags: [""]
+tags: ["hugo", "devops", "automatizacion", "linux"]
 author: "El Admin"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -33,13 +33,6 @@ cover:
 #    URL: "https://github.com/<path_to_repo>/content"
 #    Text: "Suggest Changes" # edit text
 #    appendFilePath: true # to append file path to Edit link
----
-
----
-title: "Automatizando mi blog con Hugo + GitHub Actions 🚀"
-date: 2026-03-28
-draft: false
-tags: ["hugo", "devops", "automatizacion", "linux"]
 ---
 
 Después de meses sin escribir en el blog (sí, desde 2025 😅), por fin decidí arreglar algo que me daba mucha flojera: el proceso de publicación.
