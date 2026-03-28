@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: "{{ .Date | dateFormat "2006-01-02T15:04:05Z07:00" }}"
+title: "Automatizacion Con Github Actions Y Hugo"
+date: "2026-03-28T00:50:24-06:00"
 # weight: 1
 # aliases: ["/first"]
 tags: [""]
@@ -34,3 +34,33 @@ cover:
 #    Text: "Suggest Changes" # edit text
 #    appendFilePath: true # to append file path to Edit link
 ---
+
+---
+title: "Automatizando mi blog con Hugo + GitHub Actions 🚀"
+date: 2026-03-28
+draft: false
+tags: ["hugo", "devops", "automatizacion", "linux"]
+---
+
+Después de meses sin escribir en el blog (sí, desde 2025 😅), por fin decidí arreglar algo que me daba mucha flojera: el proceso de publicación.
+
+Antes era un caos:
+- Generar el sitio manualmente
+- Subir archivos al VPS
+- Validar permisos
+- Repetir si algo fallaba
+
+Ahora todo eso se hace solo.
+
+## ⚙️ ¿Qué hice?
+
+Implementé un flujo automático usando:
+
+- Hugo para generar el sitio
+- GitHub Actions para automatizar el build
+- rsync + SSH para desplegar al VPS
+
+Cada vez que hago:
+
+```bash
+git push origin production
