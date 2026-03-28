@@ -13,13 +13,13 @@ jobs:
       - name: 📥 Checkout Repo
         uses: actions/checkout@v5
 
-      - name: 🛠️ Setup SSH agent
+      - name: 🔐 Prepare SSH key
         shell: bash
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          eval "$(ssh-agent -s)"
-          echo "${{ secrets.DEPLOY_SSH_KEY }}" | tr -d '\r' | ssh-add -
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p 2222 ${{ secrets.DEPLOY_SERVER }} >> ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
@@ -28,24 +28,24 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-
+      
       - name: Build del sitio
         run: hugo --cleanDestinationDir
-
+      
       - name: 🚀 Rsync Deploy to VPS
         shell: bash
         run: |
-          ssh -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
             chown -R rlopez:www-data /var/www/html/soporteregio.com/public_html/
             chmod -R 775 /var/www/html/soporteregio.com/public_html/
           EOF
 
           rsync -avz --delete \
-            -e "ssh -p 2222" \
+            -e "ssh -i ~/.ssh/deploy_key -p 2222 -o StrictHostKeyChecking=no" \
             public/ \
             ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }}:/var/www/html/soporteregio.com/public_html/
 
-          ssh -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -p 2222 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_SERVER }} bash -s <<'EOF'
             ln -sfn /var/www/html/dokuwiki /var/www/html/soporteregio.com/public_html/wiki
             ln -sfn /usr/share/phpmyadmin /var/www/html/soporteregio.com/public_html/phpmyadmin
             sudo chown -R www-data:www-data /var/www/html/soporteregio.com/public_html/
