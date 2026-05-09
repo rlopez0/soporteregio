@@ -27,7 +27,7 @@ cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
+    relative: false # use true only when the cover image lives inside the same post folder (page bundle)
     hidden: true # only hide on current single page
 #editPost:
 #    URL: "https://github.com/<path_to_repo>/content"

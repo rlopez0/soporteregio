@@ -1,0 +1,11 @@
+{{- $title := .Get "title" | default "iTerm2" -}}
+{{- $content := .InnerDeindent | strings.TrimSpace -}}
+<div class="sr-terminal">
+  <div class="sr-terminal-bar">
+    <span class="sr-terminal-dots" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </span>
+    <span class="sr-terminal-title">{{ $title }}</span>
+  </div>
+  <pre class="sr-terminal-body"><code>{{ $content }}</code></pre>
+</div>

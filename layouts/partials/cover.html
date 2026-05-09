@@ -1,6 +1,6 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
 {{- if (and .Params.cover.image (not $.isHidden)) }}
-<figure class="entry-cover" style="width:100%; text-align:center;">
+<figure class="entry-cover{{ if $.IsSingle }} cover-single{{ else }} cover-list{{ end }}">
     {{- $loading := cond $.IsSingle "eager" "lazy" }}
     {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
     {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
@@ -41,14 +41,13 @@
                 src="{{ $cover.Permalink }}"
                 sizes="(min-width: 768px) 720px, 100vw"
                 width="{{ $cover.Width }}" height="{{ $cover.Height }}"
-                alt="{{ $alt }}"
-                style="max-width:100%; max-height:300px; height:auto; object-fit:contain;">
+                alt="{{ $alt }}">
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}
-            <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" style="max-width:100%; max-height:700px; height:auto; object-fit:contain;">
+            <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
         {{- end }}
     {{- else }}
         {{- /* For absolute urls and external links, no img processing here */}}
-        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" style="max-width:100%; max-height:700px; height:auto; object-fit:contain;">
+        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
     {{- end }}
 
     {{- if $addLink }}

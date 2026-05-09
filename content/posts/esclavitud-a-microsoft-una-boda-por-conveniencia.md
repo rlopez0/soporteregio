@@ -41,13 +41,13 @@ En la gran comedia romántica que es el mundo de la tecnología, las empresas su
 
 No es ningún secreto que Microsoft, con su suite Microsoft 365, se ha convertido en el estándar de facto para herramientas de colaboración y ofimática. Su omnipresencia es tal, que sugerir en el ambiente laboral el uso de sistemas operativos como Linux o MacOS es casi visto como proponer una boda en Las Vegas: emocionante, pero con consecuencias impredecibles.
 
-{{< figure src="/images/exclavitud_informatica2.webp" width="500" height="500" align=center caption="Lleno de reglas" >}}
+{{< figure src="/images/exclavitud_informatica2.webp" width="1000" align=center caption="Lleno de reglas" >}}
 
 La cuestión no es solo de preferencia; es una de compatibilidad y funcionalidad. Por ejemplo, tomemos el caso de un empleado aventurero que quiso migrar a Linux, específicamente a Arch Linux. Su sueño era simple: libertad y eficiencia. Sin embargo, se encontró con un obstáculo del tamaño de un pastel de boda sin cortar: la falta de compatibilidad de Microsoft Outlook y, en particular, la función de reglas para gestionar un alud de correos electrónicos. Resulta que encontrar un software equivalente que pudiera manejar esta tarea específica fue como buscar un DJ que solo toque vinilos de edición limitada: una misión casi imposible.
 
 ## La Fiesta de Compromiso Sin Fin
 
-{{< figure src="/images/exclavitud_informatica3.webp" width="500" height="500" align=center >}}
+{{< figure src="/images/exclavitud_informatica3.webp" width="1000" align=center caption="Pura fiesta">}}
 
 Esta dependencia tecnológica es como estar en una fiesta de compromiso que nunca termina. Sabes que deberías irte, que hay otras opciones allá afuera, posiblemente mejores y más emocionantes, pero el miedo a lo desconocido y el confort de lo familiar te mantienen pegado a la pista de baile, moviendo los pies al ritmo de las actualizaciones automáticas y las suscripciones anuales.
 
@@ -61,4 +61,4 @@ Es cierto que cambiar de socio tecnológico puede ser tan desafiante como aprend
 
 Así que la próxima vez que te encuentres lamentando tu "matrimonio" con Microsoft, recuerda que el mundo de la tecnología es vasto y variado. Hay muchos "peces" en el mar de la informática, y quién sabe, quizás tu pareja ideal aún está esperando ser descubierta. Al fin y al cabo, en el amor y en la tecnología, la aventura de explorar es lo que realmente enriquece nuestra experiencia.
 
-{{< figure src="/images/exclavitud_informatica4.webp" width="500" height="500" align=center >}}
+{{< figure src="/images/exclavitud_informatica4.webp" width="1000" align=center caption="¿Divorcio o Dictadura?">}}
