@@ -14,10 +14,10 @@ Thumbs.db
 *.tmp
 *.swp
 
-# Node (si lo usas)
+# Node
 node_modules/
 
-# Python (si lo usas)
+# Python
 __pycache__/
 *.pyc
 
