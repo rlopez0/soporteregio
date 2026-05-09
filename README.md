@@ -1,105 +1,117 @@
-# 🧠 Soporteregio.com – Blog personal con Hugo + PaperMod
+# SoporteRegio.com
 
-Este repositorio contiene el código fuente y la estructura del blog [Soporteregio.com](https://soporteregio.com), generado con Hugo y basado en el tema [PaperMod](https://adityatelange.github.io/hugo-PaperMod/).
+Repositorio del sitio [soporteregio.com](https://soporteregio.com), generado con [Hugo](https://gohugo.io/) y basado en el tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod/).
 
-## ⚙️ Flujo de trabajo automatizado
+El proyecto funciona como blog técnico en español, con contenido sobre terminales, Linux, automatización, contenedores, Windows y herramientas de desarrollo.
 
-El flujo está pensado para facilitar el desarrollo desde tu PC con Windows (y Mac en el futuro), con scripts para:
+## Stack actual
 
-- Crear nuevos posts
-- Compilar el sitio localmente
-- Publicar al VPS sin pasos manuales
+- Hugo Extended
+- Tema PaperMod
+- Markdown + shortcodes de Hugo
+- GitHub Actions para build y deploy
+- VPS remoto como destino de publicación
 
----
+## Estructura principal
 
-## 📁 Estructura del proyecto
-
-Soporteregio.com/ 
-├── content/posts/ # Entradas del blog 
-├── static/ # Recursos estáticos (imágenes, etc.) 
-├── public/ # Sitio generado por Hugo (no editar a mano) 
-├── scripts/ # Scripts de automatización 
-│ ├── build.ps1 
-│ ├── deploy.ps1 
-│ └── newpost.ps1 
-├── config.toml # Configuración del blog 
-├── themes/ # Tema PaperMod 
-└── README.md # Este archivo
-
----
-
-## 🧰 Scripts disponibles
-
-### 📝 1. Crear nuevo post
-
-```powershell
-.\scripts\newpost.ps1 "Mi título llamativo"
+```text
+soporteregio/
+├── archetypes/                  # Plantillas base para nuevos posts
+├── content/posts/               # Entradas del blog
+├── docs/                        # Documentación interna del proyecto
+├── layouts/                     # Overrides locales del tema y shortcodes
+│   ├── partials/
+│   └── shortcodes/
+├── static/                      # Recursos públicos estáticos
+├── themes/PaperMod/             # Tema base
+├── config.yaml                  # Configuración principal del sitio
+└── .github/workflows/deploy.yml # Pipeline de despliegue
 ```
-Esto genera un archivo .md con estructura base en content/posts/.
 
-🔨 2. Compilar el sitio localmente
-```powershell
-.\scripts\build.ps1
+## Convenciones del contenido
+
+La documentación editorial del proyecto vive en:
+
+- [docs/cheatsheet-hugo.md](docs/cheatsheet-hugo.md)
+
+Ahí quedaron registradas las reglas actuales para:
+
+- imágenes dentro de posts
+- portadas (`cover`) en frontmatter
+- enlaces internos y externos
+- uso del shortcode `figure`
+- uso del shortcode `Terminal`
+
+## Shortcodes locales
+
+Además de PaperMod, el sitio incluye shortcodes locales dentro de `layouts/shortcodes/`.
+
+### `figure`
+
+Versión local del shortcode para imágenes con soporte consistente para:
+
+- `caption`
+- `link`
+- `target="_blank"`
+- imágenes dentro de page bundles
+
+### `Terminal`
+
+Shortcode visual para mostrar comandos como ventana tipo macOS/iTerm2.
+
+Ejemplo:
+
+```md
+{{< Terminal title="iTerm2" >}}
+$ colorscript -e tiefighter1
+{{< /Terminal >}}
 ```
-Genera el contenido en la carpeta public/, listo para publicar.
 
-🚀 3. Publicar al servidor VPS
-```powershell
-.\scripts\deploy.ps1
-```
-Este script hace lo siguiente:
+## Portadas y estilo visual
 
-- Genera el sitio con Hugo
-- Usa pscp.exe de PuTTY + tu llave privada artemisa.ppk
-- Sube el contenido al VPS (45.56.73.27) en la ruta /var/www/soporteregio.com
+El sitio incluye overrides propios para mantener consistencia visual respecto al tema base:
 
-    ⚠️ Requiere que tengas instalado PuTTY y pscp.exe esté disponible en tu sistema.
+- ancho principal del layout ajustado desde `themes/PaperMod/assets/css/extended/custom.css`
+- portadas de posts normalizadas para listas y home
+- header local con rutas relativas para mejor comportamiento en desarrollo local
+- soporte visual para bloques `Terminal`
 
----
+## Desarrollo local
 
-🌿 Uso de ramas Git
-Este proyecto utiliza un esquema clásico de ramas:
-
-- production: rama activa que refleja el sitio en vivo
-- development: cambios en progreso
-- staging: pruebas antes de publicar
-
----
-
-Flujo típico:
+Vista previa local:
 
 ```bash
-git checkout development
-# haces cambios, creas posts...
-git add .
-git commit -m "nuevo contenido"
-git push origin development
-
-# cuando esté listo para producción:
-git checkout production
-git merge development
-git push origin production
-
-# y luego publicar al VPS
-.\scripts\deploy.ps1
+hugo server -D
 ```
----
-Ruta de despliegue: /var/www/soporteregio.com
 
-📌 Requisitos
-- Hugo instalado en el sistema
-- Git Bash o WSL (si usas rsync en el futuro)
-- PuTTY + pscp.exe (compatible con .ppk)
+Build completo:
 
----
-📅 Pendientes a futuro
-- Configurar GitHub Actions para despliegue automático
-- Agregar CI para validar estructura del sitio antes de publicar
-- Sincronización con Mac vía Syncthing o Git cuando esté reparada
+```bash
+hugo
+```
 
----
-👨🏻‍💻 Autor
-rlopez0
-Blog técnico personal sobre tecnología, Linux, IA y cosas ñoñas del mundo moderno 🤓
-soporteregio.com
+## Despliegue
 
+El despliegue está definido en:
+
+- [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+
+Flujo actual:
+
+1. Push a la rama `production`
+2. GitHub Actions ejecuta build con Hugo Extended
+3. El contenido generado en `public/` se sincroniza al VPS mediante `rsync` sobre SSH
+
+## Configuración relevante
+
+Algunos puntos importantes de `config.yaml`:
+
+- `baseURL: https://soporteregio.com`
+- `theme: PaperMod`
+- `defaultContentLanguage: es`
+- `markup.goldmark.renderer.unsafe: true`
+- `outputs.home` incluye `HTML`, `RSS` y `JSON`
+
+## Estado actual del proyecto
+
+El repositorio ya no depende del flujo descrito originalmente con scripts PowerShell para publicar. El proceso activo de build y despliegue está centrado en Hugo local para vista previa y GitHub Actions para publicación.
