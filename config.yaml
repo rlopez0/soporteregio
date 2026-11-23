@@ -122,6 +122,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: guias
+      name: guías
+      url: /guias/
+      weight: 5
     - identifier: archives
       name: archivo
       url: /archives/

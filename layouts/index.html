@@ -1,0 +1,46 @@
+{{- define "main" }}
+{{- $posts := where site.RegularPages "Section" "posts" }}
+<div class="fenix-home">
+  <section class="fenix-hero" aria-labelledby="hero-title">
+    <div class="fenix-hero-copy">
+      <p class="fenix-eyebrow"><span></span> APUNTES DE TECNOLOGÍA</p>
+      <h1 id="hero-title">Aprender, probar<span>.</span><br>Compartir lo que funciona<span>.</span></h1>
+      <p class="fenix-intro">Un rincón para documentar ideas, experimentos y soluciones del mundo real. Tecnología explicada desde la experiencia, sin complicarla de más.</p>
+      <div class="fenix-actions">
+        <a class="fenix-button" href="{{ "posts/" | relURL }}">Explorar artículos</a>
+        <a class="fenix-text-link" href="{{ "guias/" | relURL }}">Explorar guías</a>
+        <a class="fenix-text-link" href="{{ "archives/" | relURL }}">Ver el archivo</a>
+      </div>
+    </div>
+    <div class="fenix-visual" aria-hidden="true">
+      <div class="fenix-grid"></div>
+      <div class="fenix-orbit orbit-one"></div><div class="fenix-orbit orbit-two"></div>
+      <div class="fenix-terminal">
+        <div class="fenix-terminal-head"><span class="terminal-dots"><i></i><i></i><i></i></span><span>notas / laboratorio</span><span>●</span></div>
+        <div class="fenix-terminal-body"><p><span>~</span> <b>$</b> explorar</p><p class="terminal-muted">Ideas, pruebas y aprendizajes.</p><p><span>~</span> <b>$</b> documentar</p><p class="terminal-ok">Listo para compartir<span class="terminal-cursor">_</span></p></div>
+      </div>
+      <div class="fenix-visual-label">HECHO CON CURIOSIDAD <span>✳</span></div>
+    </div>
+  </section>
+
+  <section class="fenix-topics" aria-label="Temas del sitio">
+    <div><span class="fenix-topics-label">EN ESTE ESPACIO</span><span class="fenix-topics-line"></span></div>
+    <p>Homelab <span>✳</span> Linux <span>✳</span> Automatización <span>✳</span> Ideas &amp; opinión</p>
+  </section>
+
+  <section class="fenix-writing" aria-labelledby="latest-title">
+    <div class="fenix-section-heading"><div><p class="fenix-eyebrow">DESDE EL BLOG</p><h2 id="latest-title">Lo último por aquí<span>.</span></h2></div><a href="{{ "posts/" | relURL }}">Todos los artículos</a></div>
+    <div class="fenix-articles">
+      {{- range first 6 $posts.ByDate.Reverse }}
+      <article class="fenix-card">
+        <div class="fenix-card-meta"><span>{{ with .Params.tags }}{{ index . 0 }}{{ else }}Artículo{{ end }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time></div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Summary | plainify | truncate 145 }}</p>
+        <a class="fenix-read" href="{{ .RelPermalink }}" aria-label="Leer {{ .Title }}">Leer artículo</a>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+  <section class="fenix-note"><div><p class="fenix-eyebrow">SOBRE ESTE ESPACIO</p><h2>La tecnología se disfruta más cuando se comparte<span>.</span></h2></div><p>Notas de lo que voy aprendiendo: cosas que funcionaron, otras que no tanto y las soluciones que vale la pena recordar.</p></section>
+</div>
+{{- end }}
